@@ -1,9 +1,9 @@
 $(document).ready(function(){
-    //This is personal data U can change all of data in here!!
+    //This is personal data U can change all of data in here!!Okay And then you 
     const personal_data = {
-        name:'Aisha Fatima',                                        //personal name
+        name:'Tehreem Nawaz',                                        //personal name
         age:'22',                                                   //personal age
-        country:'India',                                          //personal country
+        country:'Pakistan',                                          //personal country
         birth:'2003-02-16',                                         //birthday
         lan:['English', 'Hindi', 'Japanese'],                    //language
         aboutme:`I’m a Pakistan-based developer specializing in website development, web scraping, automation, Shopify, ecommerce solutions, Web3, and smart contract development. With a strong mix of technical skill and entrepreneurial spirit, I create tools, platforms, and integrations that help businesses run smarter and faster.
@@ -11,26 +11,26 @@ $(document).ready(function(){
                     My journey started as the owner of a small online business, where I handled everything from product sourcing to full-stack development. Working remotely with international clients taught me how to manage projects independently, adapt to diverse needs, and deliver results that make a real impact.
                     Whether it’s building a high-performance website, scraping data at scale, or deploying a secure smart contract, I bring precision, creativity, and efficiency to every project I take on. `, 
         photo:'images/me.png',
-        projects:[
+        projects:[ //this porjects is my project link! please change this link! which one
             {
                 title : 'Portfolio',
                 pro_url:'http://arne-D.vercel.app',
                 pro_image:'images/projects/1.png',
-                source:'https://github.com/Arn-2000-D/arne-D.git',
+                source:'https://github.com',
                 description:'That is my portfolio I built my own self with HTML and JQery.'
             },
             {
                 title : 'Sport-facility',
                 pro_url:'http://sport-shop-1.vercel.app',
                 pro_image:'images/projects/2.png',
-                source:'https://github.com/Arn-2000-D/sport-shop-1',
+                source:'https://github.com',
                 description:'React Vite, API Integration, Lovable.dev, Cursor, tailwind css'
             },
             {
                 title : 'Pet',
                 pro_url:'http://furggo.com',
                 pro_image:'images/projects/3.png',
-                source:'https://github.com/Arn-2000-D/arne-D.git',
+                source:'https://github.com',
                 description:'Theme, Shopify, Payment, Delivery, Design-landing, Card'
             },
             {
@@ -58,7 +58,7 @@ $(document).ready(function(){
                 title : 'Sport-facility',
                 pro_url:'http://sport-shop-2-two.vercel.app',
                 pro_image:'images/projects/7.png',
-                source:'https://github.com/Arn-2000-D/sport-shop-2',
+                source:'https://github.com',
                 description:'React Vite, API Integration, Lovable.dev, Cursor, tailwind css'
             },
             {
@@ -100,15 +100,16 @@ $(document).ready(function(){
             
         ],
         contact_adress : {
-            tg:'+380 93 971 37 93',
-            wa:'+380 93 971 37 93',
-            dc:'sus_sos_o9',
-            gh:'Arn-2000-D'
+            wa:'+923266385671',//this is watsApp! Then I will add theses three sounds good.!Okay!
+            dc:'@tehreemnawaz15',//
+            gh:'https://github.com/tehreemnawaz/'//
         },
-        experience:[
-            'I graduated the Bachelor Of Computer Science University (BcompSC) from 2010~2014.<br> I mastered C++, JS, PHP, Python in Here as a high mark.',
-            'I founded the small IT team with my partners and build some projects with html, php, javascript , c++, mysql',
-            'I increase my team to build new dropshipping site to get more money. while I work for that I made so many shopping sites as a engineer.'
+        experience:[//I will! add this content! okay This is javascript array string data structure!
+            'I graduated from the Pakistan (Bachelors in Mathematics) from 2019~2023.',
+            'Shopify Store Design   Shopify Platform Knowledge <br> Dashboard navigation & store settings Product,<br> collection & category setup Payment gateway & shipping integration' ,
+            'Theme Customization Theme selection & installation <br> Layout arrangement & responsive design <br> Template modification (homepage, product pages) <br> Custom sections & blocks creation',
+            'Shopify Liquid & Web Development Basic HTML, CSS & JavaScript <br> Shopify Liquid templating language Custom snippets & code adjustments',
+            'UX/UI Design User-friendly interface creation <br> Branding consistency (colors, fonts) Optimized navigation & menu structure <br> Strategic CTA placement'
         ]
     }
 
@@ -153,7 +154,11 @@ $(document).ready(function(){
     $(".experience_first").text(personal_data.experience[0]);
     $(".experience_second").text(personal_data.experience[1]);
     $(".experience_third").text(personal_data.experience[2]);
-    
+    $(".experience_fourth").text(personal_data.experience[3]);
+    $(".experience_fifth").text(personal_data.experience[4]);    
+
+    console.log("this is experience data", personal_data.experience[4]);
+    alert(personal_data.experience[4]);
 
 
     $(document).on("mousemove", function (e) {
@@ -173,6 +178,8 @@ $(document).ready(function(){
         setTimeout(() => $star.remove(), 1000);
         }
     });
+
+
 
 
 })
